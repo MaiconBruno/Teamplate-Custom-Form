@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form-Custom</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/dfbb348a86.js" crossorigin="anonymous"></script>
+
+<body>
+  <div class="main-body">
+    <div class="box-form">
+      <div id="form-1" class="show-form main-container">
+        <div class="header-element-form">
+          <div class="box-icon-header">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+          <div class="box-text-header">
+              <h4>already have on account?</h2>
+              <h2>log in here</h2>
+          </div>
+        </div>
+        <form class="form-style" action="">
+          <div class="input-box">
+            <label for="user"><i class="fas fa-user"></i></label>
+            <input id="user" type="text" placeholder="Username">
+          </div>
+          <div class="input-box">
+            <label for="password"><i class="fas fa-unlock-alt"></i></label>
+            <input id="password" type="text" placeholder="Password">
+          </div>
+          <div class="button-box">
+            <button class="submit-button" type="submit">
+              <div class="box-icon-text">
+                Log in
+              </div>
+            </button>
+          </div>
+        </form>
+        <div class="register-link">
+          <a onclick="ShowOrCover();">Not is registred? let's go register ? </a>
+        </div>
+      </div>
+      <div id="form-2" class="cover-form main-container">
+        <div class="header-element-form">
+          <div class="box-icon-header">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="box-text-header">
+              <h4>Don't have on account?</h2>
+              <h2>REGISTER NOW</h2>
+          </div>
+        </div>
+        <form action="">
+          <div class="input-box">
+            <label for="reg-user"><i class="fas fa-user"></i></label>
+            <input id="reg-user" type="text" placeholder="Username">
+          </div>
+          <div class="input-box">
+            <label for="email-user"><i class="fas fa-at"></i></label>
+            <input id="email-user" type="text" placeholder="user@email.com">
+          </div>
+          <div class="box-show-password">
+            <label for="show-password">
+              <i style="display: none;" id="pass-see" class="far fa-eye"></i>
+              <i id="pass-no-see"  class="fas fa-eye-slash"></i>
+            </label>
+            <p id="show-password" class="show-password" onClick="PassworShow();">Show Password</p>
+          </div>
+          <div class="input-box">
+            <label for="reg-password"><i class="fas fa-key"></i></i></label>
+            <input id="reg-password" type="password" placeholder="**********">
+          </div>
+          <div class="input-box">
+            <label for="confirm-password"><i class="fas fa-key"></i></label>
+            <input id="confirm-password" type="password" placeholder="**********">
+          </div>
+          <div class="terms-acc-box">
+            <label for="check">I acceptd Terms of plataform.</label>
+            <input id="check" type="checkbox">
+          </div>
+          <button class="submit-button" type="submit">
+            <div class="box-icon-text">
+              Register
+            </div>
+          </button>
+        </form>
+        <div class="register-link">
+          <a onclick="ShowOrCover();">I have registred! </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
